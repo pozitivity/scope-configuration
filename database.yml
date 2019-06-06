@@ -1,0 +1,23 @@
+postgres:
+  default: 
+    type: 'postgres',
+    host: 'localhost',
+    port: 5432,
+    username: 'scope',
+    password: 'scope',
+    database: 'scope',
+    migrationsRun: true, // runs migrations when app is running
+    logging: true,
+    synchronize: false,
+    migrationsTableName: "databasechangelog", // table name for the detecting changes
+    entities: [
+        'src/**/*.entity{.ts,.js}',  // place of all entities
+    ],
+    migrations: [
+        'src/migrations/*{.ts,.js}'  // place of all migrations
+    ],
+    cli: {
+        entitiesDir: 'src',
+        migrationsDir: 'src/migrations'
+    }
+  
