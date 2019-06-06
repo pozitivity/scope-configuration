@@ -1,5 +1,5 @@
 spring:
   cloud:
     config:
-      name: 'user-management',
+      name: 'user-management-service'
       port: 3000
