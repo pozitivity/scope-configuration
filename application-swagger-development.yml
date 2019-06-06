@@ -4,7 +4,7 @@ documentation:
     services:   
       - 
         name: User-management
-        url: ${documentation.baseurl}:${services.user-management.port}/v2/api-docs/users
+        url: ${documentation.baseurl}:${services.user-management.port}/api-docs/users
         version: 1.0
         
 services: 
