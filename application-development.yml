@@ -1,3 +1,5 @@
 services:
   user-management:
     port: 3000
+  swagger-service:
+    port: 3001
