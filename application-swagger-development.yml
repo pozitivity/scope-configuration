@@ -1,11 +1,10 @@
 documentation: 
   baseurl: http://localhost
   swagger: 
-    services:   
-      - 
-        name: User-management
+    services:
+      user-management
         url: ${documentation.baseurl}:${services.user-management.port}/api-docs/users
-        version: 1.0
+        tag: users
         
 services: 
   user-management:
