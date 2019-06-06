@@ -1,0 +1,13 @@
+documentation: 
+  baseurl: http://localhost
+  swagger: 
+    services:   
+      - 
+        name: User-management
+        url: ${documentation}:${services.user-management.port}/v2/api-docs/users
+        version: 1.0
+        
+services: 
+  user-management:
+    port: 3000
+    tag: users
