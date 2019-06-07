@@ -2,5 +2,6 @@ baseUrl: http://localhost
 services:
   user-management:
     port: 3000
+    docsUrl: api-docs/users
   swagger-service:
     port: 3001
